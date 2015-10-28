@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class=" -class ">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <title>Example include | Surge Media</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="/skin.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://mfzy.co/isotope.pkgd.js"></script>
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+<div id="console" class="container">	
+	
+</div>
+	
+<script>
+		$.getJSON('/template-list.json', function(json) {
+			console.log(json);
+			for (var i = json.length - 1; i >= 0; i--) {
+				console.log(json[i]['path'])
+				console.log(json[i]['path'].split('/'));
+				var html = "<li><a href='"+json[i]['path'].replace('render/',"")+"'>"+json[i]['path']+"</a></li>";
+				$('#console').append('<ul>');
+				$('#console').append(html)
+				$('#console').append('</ul>');
+
+			};
+		
+				/*optional stuff to do after success */
+		});
+			
+		</script>
+
+	<div id="resources" class="container">
+		<h2>Resources</h2>
+		<p>Here are some places to find snippets</p>
+		<ul>
+			<li><a href="http://cssdeck.com"><img src="http://unsplash.it/300/300/?random" alt=""></a></li>
+			<li><a href="http://codepen.io"><img src="http://unsplash.it/300/300/?random" alt=""></a></li>
+			<li><a href=""><img src="" alt="http://unsplash.it/300/300/?random"></a></li>
+		</ul>
+	</div>
+
+
+		<script src="/assets/js/main.js"></script>
+	</body>	
+</html>
