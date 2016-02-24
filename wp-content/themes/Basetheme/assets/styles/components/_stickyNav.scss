@@ -1,0 +1,12 @@
+.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+    -moz-transition: fadeIn .4s;
+    -o-transition: fadeIn .4s;
+    -webkit-transition: fadeIn .4s;
+    transition: fadeIn .4s;
+}

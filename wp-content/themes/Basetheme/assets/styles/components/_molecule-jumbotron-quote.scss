@@ -1,0 +1,38 @@
+#jumbotron {
+	border-bottom:4px solid #fff;
+	&::before {
+		@extend .pattern-bg;
+		@extend .before_auto;
+		background-color:rgba(#000,0.4);
+	}	
+
+		.quote {
+		    color: #fff;
+		    line-height: 1.7em;
+		    font-size: 4em;
+		    width: 75%;
+		    margin: 6em auto;
+		    text-transform: normal;
+		    position: relative;
+		    z-index:99;
+
+		    .surge-icon-quotation_mark_start {
+		    	    position: absolute;
+				    top: -0.5em;
+				    left: -1.5em;
+		    }
+		    .surge-icon-quotation_mark_end {
+		    	    position: absolute;
+    				bottom: -0.8em;
+    				right: -0.5em;
+		    }
+
+	}
+	&.size-s {
+		height:50vh;
+		.quote {
+			margin-top: 3.5em;
+			font-size: 3.5em;
+		}
+	}	
+}

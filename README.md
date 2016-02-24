@@ -21,6 +21,10 @@ these are pages and a taxonomy of `Case Studies` that will be called onto a page
 this will be a default blog affair, with a section for bg image and related Case studies. I would like the author profiles to be correctly setup and applied, either through staff or wordpress user profiles.
 
 ##Content Sheets
-TBA
+
+
+
 ##Plugins
-TBA
+
+
+##3pm - thursday - Friday

@@ -1,0 +1,25 @@
+.ghost-paragraph {
+	margin: 2.8em 0em 0em 0em;
+	background:rgba(#fff,0.9);
+	padding:2em 1em 2em 1em;
+	text-align:center;
+	h1 {
+		color:$teal;
+		margin-bottom: 0.7em;	
+	}
+	.url,
+	.text-btn {
+		color:#000;
+		margin-bottom: 0.5em;
+		font-weight:300;
+		line-height:2em;
+		text-transform: uppercase;
+		font-family:$secondary-font;
+		background-color:transparent;
+		border:0px;
+		box-shadow:0px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

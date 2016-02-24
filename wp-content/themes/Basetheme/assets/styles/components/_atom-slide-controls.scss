@@ -1,0 +1,20 @@
+.controls {
+	color:#fff;
+	position:absolute;
+	right:0px;
+	top: 19vh;
+    z-index: 999;
+    &.left {
+    	right:auto;
+    	left:0px;
+    }
+	div {
+		color:#fff;
+	    width: 35px;
+	    height: 35px;
+	    background:$yellow;
+	}
+	div + div {
+		margin-top: 1px;
+	}
+}

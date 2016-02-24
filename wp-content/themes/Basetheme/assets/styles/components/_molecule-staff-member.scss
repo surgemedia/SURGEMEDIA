@@ -1,0 +1,155 @@
+#staff-objs {
+	transition:0.3s all ease;
+	font-family:$primary-font;
+	article {
+		position:relative;
+		color:#fff;
+		height:50vh;
+		overflow:hidden;
+		transition:0.3s all ease;
+		small {
+			font-family:$thin-font;
+			font-size:1.5em;
+			font-size:100;
+			text-transform: uppercase;
+		}
+		a.link {
+			@extend .empty-btn;
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:100%;
+			height:50vh;
+			line-height:47vh;
+			vertical-align: top;
+			font-size:2em;
+			font-family:$secondary-font;
+			font-weight:100;
+			transition:0.3s all ease;
+			color:transparent;
+			z-index: 99; 
+			cursor: pointer;
+			&:hover + .hidebox {
+				color:transparent;
+				transition:0.3s all ease;
+	
+			}
+			&:hover {
+				color:#fff;
+			}
+	
+		}
+		.hidebox {
+			transition:0.3s all ease;
+		}
+		span {
+			position:absolute;
+			top:0px;
+			left:0px;
+			transition:0.3s all ease;
+		}
+		.col-md-12 + .col-md-6 {
+			opacity: 0;
+			width:0px;
+			transition:0.3s all ease;
+		}
+		.icon--ei-close {
+				display:none;
+			}
+		.col-md-12 {
+			.icon--ei-close {
+				display:block;
+				transition:0.3s all ease;
+			}
+			a.link {
+				display:none;
+				transition:0.3s all ease;
+
+			}
+			h1 {
+				margin-top: 2.5em;
+			}
+		}
+		
+		h1 { margin-top: 5.3em; clear:both; display:block; 
+			text-transform: capitalize;
+		}
+		.img {
+			position:relative;
+			padding-left:0px;
+			padding-right:0px;
+			transition:0.3s all ease;
+			height: 50vh;
+			img {
+				position: absolute;
+			    bottom: 0px;
+			    left: 0px;
+			    width: 100%;
+			    z-index: 1;
+			}
+			&:before {
+				content:"";
+				@extend .pattern-bg;
+				top: 0px;
+				left: 0px;
+				position:absolute;
+				width:100%;
+				height:100%;
+				z-index:99;
+			}
+		}
+		.col-md-6 {
+			.textbox{
+				opacity: 0;
+				transition:0.3s all ease;
+				display:inline-block;
+			}
+		}
+
+		.description {
+			text-align:center;
+			transition:0.3s all ease;
+			
+			p {
+				margin:0 auto;
+				text-align:center;
+				width:50%;
+				line-height:2em;
+			}
+			.textbox {
+				padding:2em;
+				a {
+					color:#fff;
+					float:right;
+					font-size:0.6em;
+					margin: 0 1em;
+
+				}
+			}
+			ul {
+				margin-top: 4em;
+				list-style: none;
+				font-size:1.5em;
+				li {
+					list-style:none;
+					display:inline-block;
+					line-height:1em;
+					font-size: 2em;
+    				margin: 0 0.4em;
+					i {}
+					a {
+							
+						    line-height: 2em;
+						    display: inline-block;
+						    float: left;
+						    font-family:$thin-font;
+
+					}
+					&:first-child {
+						 margin: 0 1em 0 0;
+					}
+				}
+			}
+		}
+	}
+}

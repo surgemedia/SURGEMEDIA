@@ -1,0 +1,28 @@
+#service-narbar {
+	ul {
+		list-style:none;
+		text-align: center;
+		li {
+			list-style:none;
+			text-align: center;
+			display: inline-block;
+			margin: 2em 2em; 
+		&:first-child {
+			margin-left: 0px;
+			// margin-right: 0px;
+
+		}
+		&:last-child {
+			// margin-left: 0px;
+			margin-right: 0px;
+
+		}
+			a {
+				font-family:$secondary-font;
+				font-size:4em;
+				text-align: center;
+				font-weight: 100;
+			} 
+		}
+	}
+}
