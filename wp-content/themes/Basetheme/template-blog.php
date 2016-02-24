@@ -4,13 +4,10 @@
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-<?php includePart('templates/molecule-small-jumbotron.php',getFeaturedUrl(),get_the_title(),'size-s',true); ?>
+<?php includePart('templates/molecule-small-jumbotron.php',getFeaturedUrl(),get_the_content(),'size-s',true); ?>
 
 <section id="work" class="container-fluid">
 
-    <div class="big-paragraph row">
-        <?php includePart('templates/molecule-quote-main.php',get_the_content(),'',''); ?>
-    </div>
   
     <div class="row">
         <?php

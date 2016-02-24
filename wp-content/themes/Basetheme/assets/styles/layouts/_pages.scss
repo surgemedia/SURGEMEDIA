@@ -210,13 +210,30 @@ position: relative;
 	}
 	
 	h2 {
-		font-size:3em;
+		color:$teal;
+		font-family: $primary-font;
+		font-weight: 400;
+		margin-bottom: 0.7em;
 	}
 	
 	.text-puff {
 		width:60%;
 		position:relative;
 		z-index:999;
+		p {
+			@extend .p6;
+		}
+	}
+}
+#about {
+	h2.alt {
+    font-size: 4em;
+	}
+	.text-puff p {
+		@extend .p5;
+		font-weight: 200;
+	    font-size: 1.6em;
+	    line-height: 2em;
 	}
 }
 /*==================================
@@ -231,8 +248,7 @@ position: relative;
 		color:#fff;
 	}
 	p {
-		font-size:1.3em;
-
+		@extend .p5;
 		color:#fff;
 
 	}
