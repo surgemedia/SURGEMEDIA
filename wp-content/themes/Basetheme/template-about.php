@@ -59,9 +59,7 @@ endif;
     <div class="text-puff">
 	    <h2 class="alt">Our Staff</h2>
 	    <p><?php the_field('our_staff'); ?></p>
-    	<?php //the_sub_field('email'); ?>
-       <?php //the_sub_field('phone'); ?>
-       <?php //the_sub_field('job_title'); ?>
+    	
        </div>
        </div>
        </div>
@@ -90,7 +88,10 @@ endif;
 				?>
     	<article class="row <?php the_field('color') ?>" data-staff-name="Aegir Brands">
     	<div data-panel="<?php echo 'staff'.$count; ?>" class="col-md-6 description <?php  if($count % 2 == 0){ echo "pull-left"; } else { echo "pull-right";} ?>">
-    		<span  onclick="contactClose('<?php echo 'staff'.$count; ?>')"><div data-icon="ei-close" data-size="m"></div></span>
+    		<span  onclick="contactClose('<?php echo 'staff'.$count; ?>')">
+            <div data-icon="ei-close" data-size="m">
+            </div>
+            </span>
     		<a class="c link" onclick="contactOpen('<?php echo 'staff'.$count; ?>')" type="button">
 			More Details
 			</a>
@@ -106,9 +107,10 @@ endif;
 	    			<li><i class="surge-icon-phone"></i><a href=""><?php the_field('phone'); ?></a></li>
 	    		</ul>
     		</div>
-    	</div>
-    	  <div class="img col-md-6 "><img src="<?php echo $image_url; ?>"></div>
-
+    	   </div>
+    	  <div class="img col-md-6 ">
+             <img src="<?php echo $image_url; ?>" />
+          </div>
     	</article>
     <?php 
 		$count++;

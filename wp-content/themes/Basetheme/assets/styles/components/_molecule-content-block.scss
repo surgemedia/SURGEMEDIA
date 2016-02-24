@@ -10,11 +10,18 @@
 			font-weight:300;
 			width:70%;
 			text-align: center;
-			
 			display:block;
 			float:none;
 			margin: 0 auto 1em auto;
 			@extend .p4;
 			}
 		}
+}
+#client-desc {
+	p {
+		@extend .p5;
+		color:rgba(#000,0.7);
+    	font-size: 2em;
+    	line-height: 1.8em;
+	}
 }

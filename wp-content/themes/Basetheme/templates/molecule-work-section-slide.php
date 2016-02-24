@@ -12,8 +12,8 @@ style="background-image: url('<?php echo $background_image; ?>')" >
         <div class="ghost-paragraph col-md-6 <?php if($count % 2 == 0 ){ echo "pull-right"; } ?>">
             <div class="col-md-11 <?php if($count % 1 == 0 ){ echo "pull-right"; } ?>">
                
-                <h1><?php echo $section_title; ?></h1>
-                <p><?php truncate($section_content,200,''); ?></p>
+                <h2><?php echo $section_title; ?></h2>
+                <p><?php truncate($section_content,50,''); ?></p>
                 
                 <?php if($url): ?>
                 <a class="url" target="_blank" href="<?php the_field('url'); ?> "><?php

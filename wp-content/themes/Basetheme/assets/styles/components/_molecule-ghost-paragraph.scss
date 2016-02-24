@@ -3,21 +3,34 @@
 	background:rgba(#fff,0.9);
 	padding:2em 1em 2em 1em;
 	text-align:center;
-	h1 {
+	h2 {
+		@extend .h1;
 		color:$teal;
+		font-size:6em;
 		margin-bottom: 0.7em;	
+	}
+	p {
+		@extend .p5;
+		color:rgba(#000,0.7);
+    	font-size: 1.8em;
+    	line-height: 1.8em;
+    	width:80%;
+    	float:none;
+    	margin: 0 auto;
 	}
 	.url,
 	.text-btn {
-		color:#000;
-		margin-bottom: 0.5em;
-		font-weight:300;
-		line-height:2em;
+		
+		margin-top:1em;
+		margin-bottom: 1em;
 		text-transform: uppercase;
 		font-family:$secondary-font;
 		background-color:transparent;
 		border:0px;
 		box-shadow:0px;
+		@extend .p5;
+		font-size: 1.9em;
+		font-weight:300;
 		&:hover {
 			text-decoration: underline;
 		}
