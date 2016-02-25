@@ -85,15 +85,20 @@ endif;
 		 $image = getFeaturedUrl(); 
 		 $image_url = aq_resize($image,840,540,true,true,true);
 				?>
-    	<article class="row <?php the_field('color') ?>" data-staff-name="Aegir Brands">
+    	<article class="row <?php the_field('color') ?>" >
+       <div class="img hidden-md hidden-lg ">
+             <img class="img-responsive" src="<?php echo $image_url; ?>" />
+          </div>
     	<div data-panel="<?php echo 'staff'.$count; ?>" class="col-md-6 description <?php  if($count % 2 == 0){ echo "pull-left"; } else { echo "pull-right";} ?>">
     		<span  onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6','col-md-12')">
             <div data-icon="ei-close" data-size="m">
             </div>
             </span>
-    		<a class="c link" onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6','col-md-12')" type="button">
+
+    		<a class="link" onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6','col-md-12')" type="button">
 			More Details
 			</a>
+        
     		<div class="hidebox">
     		<h1><?php the_title() ?></h1>
     		<small><?php the_field('job_title'); ?></small>
@@ -106,7 +111,7 @@ endif;
 	    		</ul>
     		</div>
     	   </div>
-    	  <div class="img col-md-6 ">
+    	  <div class="img col-md-6 hidden-sm  hidden-xs">
              <img src="<?php echo $image_url; ?>" />
           </div>
     	</article>
