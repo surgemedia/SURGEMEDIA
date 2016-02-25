@@ -4,14 +4,12 @@
   	<div class="col-lg-12 text-center"><i class="surge-logo-symbol"></i></div>
     <div class="col-lg-3 copyRight">
     <span class="title"><?php echo date("Y"); ?> &copy; Surge Media</span>
-    <ul>
-    	<li></li>
-    	<li></li>
-    	<li></li>
-    	<li></li>
-    </ul>
-    <small>Terms &amp; Conditions |</small>
-    <small> Privacy Policy</small>
+    <?php
+                if (has_nav_menu('footer-menu')) :
+                  wp_nav_menu(['theme_location' => 'footer-menu']);
+                endif;
+            ?>
+    
      </div>
     <div class="col-lg-6 signUp">
     <?php $frontpage_ID = get_option('page_on_front'); ?>
@@ -42,12 +40,39 @@
     </div>
     <div class="col-lg-3 followUs">
     	<span class="title text-center">Follow Us</span>
-    	<ul>
-    		<li><a href=""><i class="fa fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
-            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-    		<li><a href=""><i class="fa fa-twitter"></i></a></li>
+   	
+        <ul>
+        <?php
+            // debug(get_post_meta(get_the_ID()));
+            // check if the repeater field has rows of data
+            if( have_rows('social_icons') ):
+                // loop through the rows of data
+                while ( have_rows('social_icons') ) : the_row(); 
+               
+                    if(get_sub_field('show')){?>
+                        
+                    <li>
+                        <a href="<?php echo get_sub_field('url') ?>">
+                            <i class="fa fa-<?php echo  get_sub_field('icon')?>"></i>
+                        </a>
+                    </li>
+                 
+        
+        <?php       }
+                endwhile;
+
+            else :
+
+                // no rows found
+
+            endif;
+
+        ?>
+    		<!-- <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
     	</ul>
     </div>
   </div>
