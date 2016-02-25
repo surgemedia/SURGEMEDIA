@@ -12,27 +12,27 @@ $paragraph = get_field('services_paragraph');
 <?php if($paragraph[$i]['hashtag'] == $_GET['service']){
     $image_url = $paragraph[$i]['image']; 
   } } ?>
-<?php includePart('templates/molecule-small-jumbotron.php',$image_url,get_the_content(),'size-s',true); ?>
+<?php includePart('templates/molecule-small-jumbotron.php',$image_url,get_field('title'),'size-s',true); ?>
 <div class="white-bg">
     <div id="service-narbar" class="container filter-group filter--service">
         <ul>
             <li>
-                <a href="?service=All">
+                <a class="<?php if($_GET['service'] =='All'){ echo 'active';} ?> " href="?service=All">
                     All
                 </a>             
             </li>
             <li>
-                <a href="?service=Design">
+                <a class="<?php if($_GET['service'] =='Design') { echo 'active';}?> " href="?service=Design">
                     Design
                 </a>               
             </li>
             <li >
-                <a href="?service=Development">
+                <a class="<?php if($_GET['service'] =='Development'){ echo 'active';} ?> " href="?service=Development">
                     Development
                 </a>            
             </li>
             <li >
-                <a href="?service=Video">
+                <a class="<?php if($_GET['service'] =='Video'){ echo 'active';} ?> " href="?service=Video">
                     Video
                 </a>
             </li>
@@ -52,7 +52,13 @@ $paragraph = get_field('services_paragraph');
     <?php    } ?>
      <?php if('All' == $_GET['service']){ ?>
     <div class="big-paragraph row">
-        <?php includePart('templates/molecule-quote-main.php',get_the_content(),'',''); ?>
+
+   <?php 
+   if(strlen(trim(get_the_content())) > 0){
+   $temp_content = '<p>'.get_the_content().'</p>'; 
+   ?>
+        <?php includePart('templates/molecule-quote-main.php',$temp_content,'',''); 
+    } ?>
     </div>
    <?php } ?>
     

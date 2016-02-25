@@ -117,16 +117,17 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [],
+            "post_type": [
+                "staff"
+            ],
             "taxonomy": [],
             "filters": [
-                "search",
-                "post_type"
+                "search"
             ],
             "elements": "",
             "min": "",
             "max": "",
-            "return_format": "object"
+            "return_format": "id"
         }
     ],
     "location": [
@@ -146,5 +147,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1453092864
+    "modified": 1456356501
 }

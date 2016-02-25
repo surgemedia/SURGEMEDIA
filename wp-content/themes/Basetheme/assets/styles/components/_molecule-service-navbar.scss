@@ -22,7 +22,17 @@
 				font-size:4em;
 				text-align: center;
 				font-weight: 100;
-			} 
+				&.active,
+				&:hover {
+					// font-weight: bold;
+					color:$teal-dark;
+					text-decoration: none;
+				}
+				&.active {
+					font-weight: bold;
+				}
+			}
+
 		}
 	}
 }

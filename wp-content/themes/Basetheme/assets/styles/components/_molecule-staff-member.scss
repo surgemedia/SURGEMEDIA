@@ -41,6 +41,7 @@
 		}
 		.hidebox {
 			transition:0.3s all ease;
+			font-size:1.7em;
 		}
 		span {
 			position:absolute;
@@ -67,13 +68,17 @@
 
 			}
 			h1 {
-				margin-top: 2.5em;
+				margin-top: 1em;
 			}
 		}
 		
-		h1 { margin-top: 5.3em; clear:both; display:block; 
+		h1 { 
+			margin-top: 3em; 
+			clear:both; display:block; 
 			text-transform: capitalize;
+			@extend .h3;
 		}
+
 		.img {
 			position:relative;
 			padding-left:0px;
@@ -109,12 +114,14 @@
 		.description {
 			text-align:center;
 			transition:0.3s all ease;
+
 			
 			p {
 				margin:0 auto;
 				text-align:center;
 				width:50%;
-				line-height:2em;
+				@extend .p6;
+				color:#fff;
 			}
 			.textbox {
 				padding:2em;

@@ -18,7 +18,7 @@
             <div class=" text-center col-md-10 col-md-offset-1">
             <p><?php the_content(); ?></p>
             </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
             <?php displayGravityForm(get_field('contact_form')) ?>
         </div>
          </div>

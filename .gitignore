@@ -8,3 +8,5 @@ local-config.php
 wp-config.php
 wp-content/uploads
 wp-content/themes/Basetheme/post_types/old
+wp-content/plugins
+

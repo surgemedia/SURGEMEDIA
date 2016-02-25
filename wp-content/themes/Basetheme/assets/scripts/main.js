@@ -141,8 +141,6 @@ slickScroll('.slickScroll',40);
       $(this).parent().siblings().removeClass('open');
       $(this).parent().toggleClass('open');
   });
-          // "scripts/custom.js",
-        // "scripts/shuffle_option.js"
-        // "../bower_components/youtubeBackground/src/jquery.youtubebackground.js",
-        // "../bower_components/shuffle/jquery.shuffle.min.js",
+
+
 })(jQuery);
