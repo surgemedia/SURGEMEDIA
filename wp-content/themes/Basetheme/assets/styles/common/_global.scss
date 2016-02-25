@@ -104,11 +104,9 @@ h2,.h2 { font-size:6em;   }
     }
 }
 .entry-content {
-	margin-top: 3em;
-	margin-bottom: 3em;
+    margin: 6em auto;
+    width: 80%;
 	p {
-		font-size:1.3em;
-		line-height:1.7em;
-
+		@extend .p6;
 	}
 }

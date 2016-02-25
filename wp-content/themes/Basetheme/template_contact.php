@@ -12,7 +12,7 @@
          // $size = $args[3];
          // $quote = $arg[4];
           ?>
-<section id="jumbotron" class="big-background <?php echo $size; ?>" style="background-image:url('<?php echo $image ?>');">
+<section id="jumbotron" class="big-background <?php echo $size; ?> contact" style="background-image:url('<?php echo $image ?>');">
     <div class="pattern-bg"></div>
         <div id="contactus" class="container">
          <h1 class="text-center"><?php the_title(); ?></h1>

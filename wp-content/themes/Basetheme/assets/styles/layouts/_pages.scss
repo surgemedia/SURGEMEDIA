@@ -239,6 +239,44 @@ position: relative;
 /*==================================
 =            Contact Us            =
 ==================================*/
+#jumbotron.contact {
+	height:auto;
+	.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+		background:transparent;
+		border:0px;
+
+	}
+	.gform_wrapper div.validation_error {
+		color:#a94442 !important;
+		font-weight: 500;
+		border-color:transparent !important;
+		line-height: 1.2em;
+	}
+	.gform_wrapper .validation_message {
+		color:#a94442 !important;
+		font-weight: 500;
+		line-height: 1.2em;
+	}
+	#gform_ajax_spinner_1 {
+			content:"";
+			position:relative;
+			width:1em;
+			padding:1em;
+			height: 1em !important;
+			border-radius:100% !important;
+			overflow: hidden !important;
+			background:$yellow !important;
+		&:before {
+			position:absolute !important;
+			top:0px !important;
+			left:0px !important;
+			content:"" !important;
+			background:$yellow !important;
+			padding:2em !important;
+			z-index: 999;
+		}
+	}
+}
 #contactus {
 	position:relative;
 	z-index:99;
@@ -324,6 +362,7 @@ position: relative;
 	}
 
 }
+
 
 
 

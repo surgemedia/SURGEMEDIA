@@ -127,5 +127,31 @@ small {
 		}
 	}
 }
-
+#contact-info {
+	h2 {
+		font-size:4em;
+	}
+	ul,li {
+		text-align: center;
+		padding: 2em;
+    	position: relative;
+		i,span {
+			float:none;
+		}
+		i {
+			font-size: 2.4em;
+    margin: 0;
+    line-height: 2.7em;
+    display: inline-block;
+    position: absolute;
+    opacity: .1;
+    left: 0;
+    right: 0;
+    top: -.5em;
+    bottom: 0;
+    z-index: 1;
+    font-size: 6em;
+		}
+	}
+}
 
