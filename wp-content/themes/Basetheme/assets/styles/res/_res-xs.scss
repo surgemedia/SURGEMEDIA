@@ -1,0 +1,125 @@
+/*=================================
+=            Home Page            =
+=================================*/
+#jumbotron {
+	height: 400px;
+	background:$teal;
+	.pattern-bg {
+		background:none !important;
+		background-image:none !important;
+		background-color:transparent !important;
+		&:before {
+			background:none !important;
+			background-image:none !important;
+			background-color:transparent !important;
+		}
+	#carousel-id .carousel-inner .item {
+	padding-top:15em;
+	}
+	hgroup {
+		font-size:1.8em;
+		h1 {
+			font-size:4em;
+		}
+		h2 {
+			font-size:1em;
+		}
+		}
+	}
+}
+.work-obj {
+	background-size:cover;
+	height:410px;
+	min-height:inherit;
+}
+
+#main-content,
+.big-paragraph {
+main {
+	width:100%;
+} 
+	p{
+	font-size: 2em;
+}
+small {
+	font-size:1.4em;
+}
+
+.surge-icon-quotation_mark_start,
+	.surge-icon-quotation_mark_end {
+	position:absolute;
+	top:0px;
+	}
+	.surge-icon-quotation_mark_start {
+    left: 1em;
+    top: -1em;
+    font-size: 2em;
+    opacity: 0.1;
+	}
+	.surge-icon-quotation_mark_end {
+	right: 1em;
+    left: auto;
+    top: 95%;
+    left: auto;
+    font-size: 2em;
+    opacity: 0.1;
+	}
+}
+
+#jumbotron.big-background {
+	background-size:auto 100%;
+	background-position:center;
+	.surge-icon-quotation_mark_start,
+	.surge-icon-quotation_mark_end {
+		display:none;
+	}
+	.quote {
+		width:100%;
+		margin: 6em auto 0em;
+		font-size:2em;
+	}
+}
+#our_staff {
+	background-size:auto 100%;
+	background-position:center;
+		background-repeat:no-repeat;
+	.text-puff {
+		width:90%;
+
+	}
+}
+
+#casestudy {
+	hgroup {
+		margin: 5em auto;
+		h1 { font-size:5em;
+		margin-bottom: 0.3em;
+		 }
+		p { font-size:1.7em; }
+	}
+}
+
+#staff-objs { 
+		article {
+			height:auto;
+		.link {
+			display:none;
+		}
+		h1 {
+			margin: 1em 0 0 0;
+		}
+		
+		.textbox {
+			opacity:1 !important;
+			p {
+			width:90% !important;
+			}
+		}
+		.img {
+			display:block;
+			clear:both !important;
+		}
+	}
+}
+
+

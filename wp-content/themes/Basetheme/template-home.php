@@ -15,7 +15,7 @@
 		<i class="surge-icon-quotation_mark_start"></i>
 		<i class="surge-icon-quotation_mark_end"></i>
 		</main>
-		<small class="col-lg-12 text-center"><?php the_field('quote_footer'); ?></small>
+		<small class="col-xs-12 text-center"><?php the_field('quote_footer'); ?></small>
 		
 	</div>
 </section>

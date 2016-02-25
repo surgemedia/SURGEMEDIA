@@ -87,11 +87,11 @@ endif;
 				?>
     	<article class="row <?php the_field('color') ?>" data-staff-name="Aegir Brands">
     	<div data-panel="<?php echo 'staff'.$count; ?>" class="col-md-6 description <?php  if($count % 2 == 0){ echo "pull-left"; } else { echo "pull-right";} ?>">
-    		<span  onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6','col-md-12')">
+    		<span  onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6 col-lg-6','col-md-12')">
             <div data-icon="ei-close" data-size="m">
             </div>
             </span>
-    		<a class="c link" onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6','col-md-12')" type="button">
+    		<a class="link" onclick="contactOpen('<?php echo 'staff'.$count; ?>','col-md-6','col-md-12')" type="button">
 			More Details
 			</a>
     		<div class="hidebox">

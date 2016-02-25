@@ -9,7 +9,7 @@
 	 ?>
 
 
-	<article data-groups='["<?php echo strtolower($service); ?>"]' class="work-obj col-md-4 col-sm-12 col-xs-12 shuffle__sizer" style="background:url('<?php echo aq_resize($image,610,485,true,true,true) ?>');">
+	<article data-groups='["<?php echo strtolower($service); ?>"]' class="work-obj col-md-4 col-sm-12 col-xs-12 shuffle__sizer" style="background-image:url('<?php echo aq_resize($image,610,485,true,true,true) ?>');">
 		<div class="overlay" style="background-color:<?php echo $color; ?>">
 			<hgroup>
 				<h1><a href="<?php echo $case_study_url.'#'.$work_home_j; ?>"><?php echo $client_name ?></a></h1>

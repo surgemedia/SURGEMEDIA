@@ -36,12 +36,11 @@
            <li><i class="surge-icon-mail"></i> <span><?php the_field('mail_address') ?></span></li>
        </ul>
         </main>
-       
-        
-        
+
     </div>
 </section>
 
+<?php the_field('map'); ?>
 
 <section>
   
