@@ -2,19 +2,10 @@
   <div class="container">
   <div class="row">
   	<div class="col-lg-12 text-center"><i class="surge-logo-symbol"></i></div>
-    <div class="col-lg-3 copyRight">
-    <span class="title"><?php echo date("Y"); ?> &copy; Surge Media</span>
-    <?php
-                if (has_nav_menu('footer-menu')) :
-                  wp_nav_menu(['theme_location' => 'footer-menu']);
-                endif;
-            ?>
-    
-     </div>
-    <div class="col-lg-6 signUp">
+    <div class="col-xs-12 col-lg-6 signUp col-lg-push-3">
     <?php $frontpage_ID = get_option('page_on_front'); ?>
-    	<?php displayGravityForm(get_field('email_sign_up',$frontpage_ID)) ?>
-    	<!-- form goes here -->
+        <?php displayGravityForm(get_field('email_sign_up',$frontpage_ID)) ?>
+        <!-- form goes here -->
         <!-- <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_3"><a id="gf_3" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_3" id="gform_3" action="/PinnacleProperties/property-search/#gf_3">
                         <div class="gform_heading">
                             <h3 class="gform_title">Sign Up for our newsletter. It's awesome</h3>
@@ -38,21 +29,25 @@
                         </form>
                         </div> -->
     </div>
-    <div class="col-lg-3 followUs">
+
+    
+    
+    <div class="col-xs-12 col-lg-3 col-sm-6 col-sm-push-6 followUs col-lg-push-3">
     	<span class="title text-center">Follow Us</span>
    	
         <ul>
         <?php
+            $homeId = 5;
             // debug(get_post_meta(get_the_ID()));
             // check if the repeater field has rows of data
-            if( have_rows('social_icons') ):
+            if( have_rows('social_icons', $homeId) ):
                 // loop through the rows of data
-                while ( have_rows('social_icons') ) : the_row(); 
+                while ( have_rows('social_icons',$homeId) ) : the_row(); 
                
                     if(get_sub_field('show')){?>
                         
                     <li>
-                        <a href="<?php echo get_sub_field('url') ?>">
+                        <a href="<?php echo get_sub_field('url') ?>" target="_blank">
                             <i class="fa fa-<?php echo  get_sub_field('icon')?>"></i>
                         </a>
                     </li>
@@ -74,6 +69,15 @@
                         <li><a href=""><i class="fa fa-linkedin"></i></a></li>
             <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
     	</ul>
+    </div>
+
+    <div class="col-xs-12 col-lg-3 col-sm-6 col-sm-pull-6 copyRight col-lg-pull-9">
+        <span class="title"><?php echo date("Y"); ?> &copy; Surge Media</span>
+        <?php
+                    if (has_nav_menu('footer-menu')) :
+                      wp_nav_menu(['theme_location' => 'footer-menu']);
+                    endif;
+                ?>
     </div>
   </div>
   </div>
