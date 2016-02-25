@@ -14,6 +14,7 @@
 			<hgroup>
 				<h1><a href="<?php echo $case_study_url.'#'.$work_home_j; ?>"><?php echo $client_name ?></a></h1>
 				<h2><?php echo $service ?></h2>
+				<?php //edit_post_link('Edit this work','','',$post_id); ?>
 			</hgroup>
 		</div>
 	</article>

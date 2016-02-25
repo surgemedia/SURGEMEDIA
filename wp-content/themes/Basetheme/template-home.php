@@ -90,6 +90,7 @@ for ($j=0; $j < sizeof($case_study_home); $j++) {
 			'post_type'              => array( 'case_study' ),
 			'posts_per_page'	=> -1,
 			'post__in' => get_field('featured_case_study'),
+			'orderby' => 'post__in'
 		);
 
 		// The Query

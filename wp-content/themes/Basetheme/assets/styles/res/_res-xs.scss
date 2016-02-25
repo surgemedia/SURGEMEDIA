@@ -116,8 +116,14 @@ small {
 			}
 		}
 		.img {
-			display:block;
-			clear:both !important;
+			    display: block;
+			    clear: both!important;
+			    height: auto;
+			    width: auto;
+			    img {
+			    	position: initial;
+    				height: auto;
+			    }
 		}
 	}
 }

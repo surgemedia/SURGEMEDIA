@@ -77,6 +77,7 @@ $paragraph = get_field('services_paragraph');
 		  $args = array (
 	        'post_type'  =>  array( 'work' ),
             'posts_per_page' => -1,
+            'orderby' => 'rand',
 	        'tax_query' => array(
 	                                array(
 	                                'taxonomy' => 'services',
@@ -99,8 +100,9 @@ $paragraph = get_field('services_paragraph');
         // Restore original Post Data
         wp_reset_postdata();
         for ($i=0; $i < sizeof($work_objs); $i++) { 
-
-            if(has_post_thumbnail($work_objs[$i]->ID)){
+            $post_id = $work_objs[$i]->ID;
+            if(has_post_thumbnail($work_objs[$i]->ID) && getCaseStudyLink( wp_get_post_terms($work_objs[$i]->ID,'clients', array("fields" =>
+                "all"))[0]->name ) != 'false'){
                 includePart('templates/work-obj.php',
                 getFeaturedUrl($work_objs[$i]->ID ),
                 hex2rgba( get_field('overlay_color',$work_objs[$i]) , 0.8),
