@@ -239,6 +239,12 @@ position: relative;
 /*==================================
 =            Contact Us            =
 ==================================*/
+@keyframes flipping {
+  0% {  transform: rotateX(0deg); }
+  50%   { transform: rotateX(180deg);  }
+  100% {  transform: rotateX(0deg); }
+}
+
 #jumbotron.contact {
 	height:auto;
 	.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
@@ -258,6 +264,7 @@ position: relative;
 		line-height: 1.2em;
 	}
 	#gform_ajax_spinner_1 {
+		
 			content:"";
 			position:relative;
 			width:1em;
@@ -266,6 +273,8 @@ position: relative;
 			border-radius:100% !important;
 			overflow: hidden !important;
 			background:$yellow !important;
+			animation: flipping 0.5s ease infinite;
+
 		&:before {
 			position:absolute !important;
 			top:0px !important;
@@ -274,6 +283,7 @@ position: relative;
 			background:$yellow !important;
 			padding:2em !important;
 			z-index: 999;
+			animation: flipping 0.5s ease infinite;
 		}
 	}
 }
