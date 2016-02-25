@@ -24,6 +24,7 @@ $sage_includes = [
   'lib/aq_resizer.php',                             // Custom functions
   'lib/gravity_forms-v5.php',                       // Custom functions
   'lib/function-get-featured-image-url.php',        // Custom functions
+  'lib/function-custom-menu.php',                   // Custom functions
   'lib/function-includePart.php',                   // Custom functions
   'lib/function-truncate-content.php',              // Custom functions
   'lib/function-hex2rgba.php',                      // Custom functions
