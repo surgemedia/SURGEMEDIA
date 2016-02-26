@@ -163,7 +163,34 @@ small {
 #footer .copyRight{
 	text-align: center;
 }
-
-
+.ghost-paragraph {
+	margin-top :0px;
+&.pull-right{ 
+float:left !important;
+overflow:hidden;
+	}
+	h2 {
+	font-size: 4em;
+ }
+ p {
+ 	width:100%;
+ }
+}
+#caseStudyModal { 
+		.modal-dialog {
+		width:94vw;
+		.modal-content { 
+			iframe {
+				//height: auto;
+				height:330px;
+			}
+		}
+	}
+	button.close {
+		top:auto;
+		right:0px;
+		bottom:-2.2em;
+	}
+}
 
 

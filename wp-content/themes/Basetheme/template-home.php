@@ -9,21 +9,22 @@
 
 <?php get_template_part('templates/carousel'); ?>
 
-<section id="main-content" class="row ">
+<section id="main-content" class="">
 	<div class="container">
+	<div class="row">
 		<main class="quote text-center"><?php the_content(); ?>
 		<i class="surge-icon-quotation_mark_start"></i>
 		<i class="surge-icon-quotation_mark_end"></i>
 		</main>
 		<small class="col-xs-12 text-center"><?php the_field('quote_footer'); ?></small>
-		
+		</div>
 	</div>
 </section>
 
 
 
-<section id="work" class="container-fluid">
 
+<section id="work" class="container-fluid">
 <div class="row">
 <?php 
 // debug(get_field('featured_work'));
@@ -75,8 +76,9 @@ for ($j=0; $j < sizeof($case_study_home); $j++) {
 	
 }
 		 ?>
-	</div>
+		 </div>	
 </section>
+
 
 <section id="casestudy">
 	<hgroup class="text-center">

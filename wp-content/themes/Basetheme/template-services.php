@@ -70,7 +70,8 @@ $paragraph = get_field('services_paragraph');
         if($_GET["service"] == 'All' OR  isset($_GET["service"]) == false){
         	  $args = array (
 	        	'post_type'  =>  array( 'work' ),
-                'posts_per_page' => -1
+                'posts_per_page' => -1,
+                'orderby' => 'rand',
 	        );
 	        
 	    } else {
@@ -101,20 +102,24 @@ $paragraph = get_field('services_paragraph');
         wp_reset_postdata();
         for ($i=0; $i < sizeof($work_objs); $i++) { 
             $post_id = $work_objs[$i]->ID;
+
+            //debug(getCaseStudyLink( wp_get_post_terms($work_objs[$i]->ID,'clients', array("fields" =>
+             //  "all"))[0]->term_id ));
             if(has_post_thumbnail($work_objs[$i]->ID) && getCaseStudyLink( wp_get_post_terms($work_objs[$i]->ID,'clients', array("fields" =>
-                "all"))[0]->name ) != 'false'){
+                "all"))[0]->term_id ) != 'false'){
                 includePart('templates/work-obj.php',
                 getFeaturedUrl($work_objs[$i]->ID ),
                 hex2rgba( get_field('overlay_color',$work_objs[$i]) , 0.8),
                 wp_get_post_terms($work_objs[$i]->ID, 'services', array("fields" =>
                 "all"))[0]->name,
                 getCaseStudyLink( wp_get_post_terms($work_objs[$i]->ID,'clients', array("fields" =>
-                "all"))[0]->name ),
+                "all"))[0]->term_id ),
                 wp_get_post_terms($work_objs[$i]->ID, 'services', array("fields" =>
                 "all"))[0]->name,
                 wp_get_post_terms($work_objs[$i]->ID, 'clients', array("fields" =>
                 "all"))[0]->name
                 );
+            // TODO: Add back to top button is work-obj isn't / 3
             } 
         }
         ?>

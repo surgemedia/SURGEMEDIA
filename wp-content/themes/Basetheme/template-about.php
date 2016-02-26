@@ -106,8 +106,8 @@ endif;
     		<div class="textbox">
 			<p><?php truncate(get_the_content(),200,''); ?></p>
 	    		<ul>
-	    			<li><i class="surge-icon-mail"></i><a href=""><?php the_field('email'); ?></a></li>
-	    			<li><i class="surge-icon-phone"></i><a href=""><?php the_field('phone'); ?></a></li>
+	    			<li><i class="surge-icon-mail"></i><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></li>
+	    			<li><i class="surge-icon-phone"></i><a href="tel:<?php echo trim(str_replace(' ', '', get_field('phone'))); ?>"><?php the_field('phone'); ?></a></li>
 	    		</ul>
     		</div>
     	   </div>

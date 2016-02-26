@@ -3,6 +3,7 @@
 	background:rgba(#fff,0.9);
 	padding:2em 1em 2em 1em;
 	text-align:center;
+	overflow:hidden;
 	h2 {
 		@extend .h1;
 		color:$teal;

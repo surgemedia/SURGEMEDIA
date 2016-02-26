@@ -26,7 +26,7 @@
     </section>
 
 <section id="contact-info">
-     <div class="big-paragraph row">
+     <div class="big-paragraph">
 
         <main class="quote text-center">
         <h2>Our Contact Details</h2>

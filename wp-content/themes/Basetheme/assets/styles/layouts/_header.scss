@@ -60,19 +60,22 @@
 				}
 		}
 	}
+	&.hover_effect,
 	&:hover {
 		width:415px;
 		transition: 0.3s ease all;
 					transition: 0.3s ease all;
 
 		.brand {
+			    padding-bottom: 2em;
+    			background: #FFF;
 			i {
 				background:#fff;
 				color:$teal;
 				    padding: 0 .15em;
 				    // font-size: 7em;
-				    line-height: 1em;
-				    vertical-align: top;
+				    line-height: 0.2; 
+				    vertical-align: top; 
 					transition: 0.3s ease background-color;
 					transition: 0.3s ease content;
 		   			font-size:11em;
@@ -93,4 +96,175 @@
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background:none;
 	text-decoration: underline;
+}
+
+div#navtag-mobile {
+    background: #2795B6;
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+
+a.brand {
+    color: #fff;
+    background: #2795B6;
+    padding: .6em .6em .54em;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    font-size: 3em;
+    width: 50%;
+    line-height: 0;
+    height: auto;
+    padding: 0.5em 1em 0 1em;
+    i {
+    	    width: 100%!important;
+    display: inline-block;
+    font-size: 3em;
+    line-height: 0em;
+    height: auto;
+    overflow: hidden;
+	    &:before {
+	    	line-height: 0.5em;
+	    }
+    }
+}
+
+.navbar-header {
+    background: transparent;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+nav.navbar.navbar-default.col-xs-12 {
+    border: 0px;
+    background: 0px;
+}
+
+button.navbar-toggle.collapsed {
+    border: 0px;
+    color: #fff;
+    height: auto;
+    width: 3em;
+    margin: 0px;
+    padding: 2.6em 0 0 0;
+     transition:all ease 0.3s;
+	span.icon-bar {
+	    background: #fff !important;
+	    opacity:1;
+	    width:100%;
+	    transform:rotate(0deg);
+	    margin-bottom:8px;
+	    transition:all ease 0.3s;
+	    & + .icon-bar {
+		opacity:1;
+		width:100%;
+	    transform:rotate(0deg);
+	     margin-bottom:8px;
+	      transition:all ease 0.3s;
+	    }
+	    &:last-child {
+		opacity:1;
+		width:100%;
+	    transform:rotate(0deg);
+	     margin-bottom:8px;
+	      transition:all ease 0.3s;
+	    }
+	}
+}
+
+
+div#primary-navigation1 {
+        border-color: #e7e7e7;
+        position: absolute;
+        top: 6em;
+        height: 100vh;
+        width: 100%;
+        z-index: 99999;
+        background: #2795B6;
+        border: 0px;
+        box-shadow: none;
+        left: 0px;
+        overflow: hidden;
+        color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 13vw;
+    display: block;
+    height: auto !important;
+    float: left;
+    overflow: hidden;
+    padding: 0.2em;
+    line-height: 1em;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+ul#menu-main-menu-1 {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav>li {
+    display: block;
+    float: left;
+    height: auto !important;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: $teal-dark;
+    text-decoration: none;
+}
+
+button.navbar-toggle {
+    border: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+button.navbar-toggle {
+    border: 0px;
+    color: #fff;
+    height: auto;
+    width: 3em;
+    margin: 0px;
+    padding: 2.6em 0 0 0;
+     transition:all ease 0.3s;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar:last-child {
+    opacity: 0;
+     transition:all ease 0.3s;
+     width:100%;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    transform: rotate(45deg);
+    margin:2px 0 0 2px;
+     transition:all ease 0.3s;
+     width:100%;
+}
+.navbar-default .navbar-toggle .icon-bar + .icon-bar {
+    transform: rotate(135deg);
+     margin:-2px 0 0 2px;
+      transition:all ease 0.3s;
+      width:100%;
+}
+
+
 }

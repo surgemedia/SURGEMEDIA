@@ -19,9 +19,11 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap " role="document">
-      <div class="content row">
-        <main class="main" role="main">
+      <div class="content">
+        <main class="" role="main">
+        <div class="">
           <?php include Wrapper\template_path(); ?>
+          </div>
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>
           <aside class="sidebar" role="complementary">

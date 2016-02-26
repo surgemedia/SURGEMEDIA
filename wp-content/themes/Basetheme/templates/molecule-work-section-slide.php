@@ -13,10 +13,10 @@ style="background-image: url('<?php echo $background_image; ?>')" >
             <div class="col-md-11 <?php if($count % 1 == 0 ){ echo "pull-right"; } ?>">
                
                 <h2><?php echo $section_title; ?></h2>
-                <p><?php truncate($section_content,50,''); ?></p>
+                <p><?php truncate($section_content,200,''); ?></p>
                 
                 <?php if($url): ?>
-                <a class="url" target="_blank" href="<?php the_field('url'); ?> "><?php
+                <a class="url" target="_blank" href="<?php echo $url ?> "><?php
                 $url_dirty = $url;
                 $url_dirty = explode('www.',$url_dirty)[1];
                 $url_clean = explode('/',$url_dirty)[0];
