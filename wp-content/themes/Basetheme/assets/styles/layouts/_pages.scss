@@ -6,6 +6,7 @@ height:100vh;
 overflow:hidden;
 position: relative;
 background-position:center;
+background-size:cover;
 	#video-bg {
 		position: absolute;
 		top:0px;
@@ -170,9 +171,9 @@ background-position:center;
 =            Case Study Page            =
 =======================================*/
 .caseStudy-paragrah {
-	min-height:60vh;
+	// min-height:60vh;
 	.container-fluid {
-	min-height:60vh;
+	// min-height:60vh;
 	background-size:100% auto;
 	background-repeat:no-repeat;
 	position:relative;
