@@ -4,6 +4,7 @@
       "files": [
         "../bower_components/youtubeBackground/src/jquery.youtubebackground.js", 
         "scripts/main.js"
+
       ],
       "main": true
     },

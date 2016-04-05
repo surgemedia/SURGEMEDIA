@@ -144,3 +144,29 @@ slickScroll('.slickScroll',40);
 
 
 })(jQuery);
+(function($) {
+function isNear( element, distance, event ) {
+
+    var left = element.offset().left - distance,
+        top = element.offset().top - distance,
+        right = left + element.width() + 2*distance,
+        bottom = top + element.height() + 2*distance,
+        x = event.pageX,
+        y = event.pageY;
+
+    return ( x > left && x < right && y > top && y < bottom );
+
+};
+
+$( 'body' ).mousemove( function( event ) {
+
+    if( isNear( $( '#navtag' ), 150, event ) ) {
+        $('#navtag').addClass('hover_effect');
+    } else {
+        $('#navtag').removeClass('hover_effect');
+       
+    };
+
+});           
+
+})(jQuery);
