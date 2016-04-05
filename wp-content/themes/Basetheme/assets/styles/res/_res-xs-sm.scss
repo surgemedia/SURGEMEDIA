@@ -6,4 +6,12 @@
 }
  #jumbotron hgroup h1 {
     font-size:15em;
- } 
+ }
+ #service-narbar ul {
+	margin: 0;
+	padding: 0;
+		li {
+		width:100%;
+		clear:both;
+	} 
+}

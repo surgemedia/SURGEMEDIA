@@ -24,12 +24,11 @@
 				font-weight: 100;
 				&.active,
 				&:hover {
-					// font-weight: bold;
-					color:$teal-dark;
+					color:$yellow;
 					text-decoration: none;
 				}
 				&.active {
-					font-weight: bold;
+					font-weight: 300;
 				}
 			}
 
