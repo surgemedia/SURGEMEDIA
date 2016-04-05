@@ -99,10 +99,12 @@
 =            Carousel            =
 ================================*/
 // Home
+if($('#carousel-id')){
 $('#carousel-id').carousel({
   interval: 5000,
   pause: false
 });
+}
 // Case Study
 $('.caseStudy-paragrah').each(function(){
         $(this).carousel({
