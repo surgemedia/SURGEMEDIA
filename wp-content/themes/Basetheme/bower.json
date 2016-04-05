@@ -8,9 +8,15 @@
   "private": true,
   "dependencies": {
     "modernizr": "2.8.2",
-    "bootstrap-sass-official": "3.3.5"
+    "bootstrap-sass-official": "3.3.5",
+    "youtubeBackground": "youtube-background-video#^1.0.4",
+    "smooth-scroll": "^1.0.1",
+    "shufflejs": "^3.1.1"
   },
   "overrides": {
+    "youtubeBackground": {
+      "main": "./src/jquery.youtubebackground.js"
+      },
     "modernizr": {
       "main": "./modernizr.js"
     },
@@ -36,9 +42,6 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
       ]
     }
-  },
-  "devDependencies": {
-    "smooth-scroll": "~1.0.1",
-    "shufflejs": "~3.1.1"
   }
+
 }

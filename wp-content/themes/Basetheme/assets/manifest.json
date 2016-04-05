@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "main.js": {
+      "bower": ["youtubeBackground"],
       "files": [
-        "../bower_components/youtubeBackground/src/jquery.youtubebackground.js", 
         "scripts/main.js"
 
       ],
