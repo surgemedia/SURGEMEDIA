@@ -156,7 +156,7 @@ function isNear( element, distance, event ) {
 
     return ( x > left && x < right && y > top && y < bottom );
 
-};
+}
 
 $( 'body' ).mousemove( function( event ) {
 
@@ -165,7 +165,7 @@ $( 'body' ).mousemove( function( event ) {
     } else {
         $('#navtag').removeClass('hover_effect');
        
-    };
+    }
 
 });           
 
