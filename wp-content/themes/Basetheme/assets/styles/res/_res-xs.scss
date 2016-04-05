@@ -37,6 +37,7 @@
 .big-paragraph {
 main {
 	width:100%;
+	padding: 0 2em;
 } 
 	p{
 	font-size: 2em;
@@ -143,7 +144,7 @@ small {
 	}
 	ul,li {
 		text-align: center;
-		padding: 2em;
+		padding: 2em 0;
     	position: relative;
 		i,span {
 			float:none;

@@ -11,7 +11,7 @@
 
 <section id="main-content" class="">
 	<div class="container">
-	<div class="row">
+	<div class="">
 		<main class="quote text-center"><?php the_content(); ?>
 		<i class="surge-icon-quotation_mark_start"></i>
 		<i class="surge-icon-quotation_mark_end"></i>
