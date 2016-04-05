@@ -100,15 +100,24 @@ small {
 }
 
 #staff-objs { 
-		article {
-			height:auto;
+	article {
+		height:auto;
+		.description{
+			ul{
+				padding-left:0;
+			}
+			.textbox{
+				padding:2em 0;
+			}
+		}
 		.link {
 			display:none;
 		}
 		h1 {
 			margin: 1em 0 0 0;
+			font-size: 2.6em;
 		}
-		
+	
 		.textbox {
 			opacity:1 !important;
 			p {
@@ -155,6 +164,98 @@ small {
 		}
 	}
 }
+/*===================================
+=            About PAges            =
+===================================*/
+#our_skills{
+
+	.button-skills{
+
+		.icon--ei-close{
+			
+		}
+		.buttons{
+		 	width: 100%;
+			.button-item{
+			
+				a:first-child{
+				
+				}
+				.content{
+				}
+				.link{
+				
+			   	i{
+			   	
+    			}
+			    div{
+			    
+			    }
+			  }
+			}
+		}
+		#contact-form{
+		padding:1em;
+
+			.gform_heading { 	}
+			.gfield_label {  }
+			p{
+				
+			}
+			input,textarea {
+			
+			}
+			textarea{
+				
+			}	
+			.gform_body{
+				ul{
+					li{
+						width: 100%;
+						&.gfield_error{
+					   
+    				}
+					}
+					li:last-child{
+						
+					}
+				}
+			}
+			.gform_footer {
+				
+				input[type="submit"]{
+					
+
+				}
+			}
+		}
+		&.expanded{
+			width: 100%;
+			.buttons{
+				
+				.button-item{
+					min-width: initial;
+					a:first-child{
+						padding:0;
+						font-size: 4em;
+					}
+					.content{
+					  
+					}
+					ul,
+					p{
+						padding:0;
+					}
+					ul{
+						padding-left:1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 
 
 /*==============================

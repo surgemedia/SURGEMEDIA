@@ -31,7 +31,7 @@ if( have_rows('paragraphs') ):
 
  	// loop through the rows of data
     while ( have_rows('paragraphs') ) : the_row(); ?>
-<div class="col-md-6 text-center">
+<div class="container text-center">
        <div class="text-puff">
        <h2 class="alt"><?php the_sub_field('title'); ?></h2>
        <p><?php the_sub_field('content'); ?></p>
@@ -50,6 +50,60 @@ endif;
 ?>
         </div>
     </section>
+
+    <section id="our_skills">
+      <div class="">
+        <div class="container text-center" >
+          <div class="text-puff">
+            <h2 class="alt">Our Skills</h2>
+            <p><?php the_field('our_skills'); ?></p>
+          </div>
+          <div class="button-skills">
+            <div data-icon="ei-close" data-size="m">
+            </div>
+            <div class="buttons">
+            <?php
+               // check if the repeater field has rows of data
+               if( have_rows('our_skills_button') ):
+                 // loop through the rows of data
+                   while ( have_rows('our_skills_button') ) : the_row();
+                       // display a sub field value?>
+                     <div class="button-item">
+                       <a href="#" class="button">
+                       <?php the_sub_field('title'); ?></a>
+                      <div class="content"> <?php the_sub_field('content'); ?> </div>                 
+                       <?php if(get_sub_field('link')):?>
+                        <a class="link" href="<?php echo get_sub_field("link_url")?>" target="_blank">
+                          <div> 
+                           <?php if(get_sub_field('link_icon')):?>
+                            <i class="surge-icon-<?php echo get_sub_field('icon')?>"></i>
+                           <?php endif; ?>
+                           <?php the_sub_field('link_text') ?>
+                          </div>
+                        </a>
+                       <?php endif; ?>
+                       
+                     </div>
+                       
+               <?php endwhile;
+               else :
+                   // no rows found
+               endif;
+             ?>
+            </div>
+            <div id="contact-form" class="col-lg-6 pull-right">
+               <p><?php the_field('over_text_form'); ?></p>
+               <?php displayGravityForm(get_field('our_skills_form')); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
     <?php $staff_bg = get_field('our_staff_background'); ?>
 
     <section id="our_staff" style="background-image:url('<?php echo $staff_bg ?>');">
@@ -130,16 +184,50 @@ endif;
 		wp_reset_postdata();
 	?>
     	</section>
-        <script>
-            function contactOpen(data,remove,add){
-  if( jQuery('[data-panel="'+data+'"]').hasClass(remove) ){
-  jQuery('[data-panel="'+data+'"]').removeClass(remove);
-  jQuery('[data-panel="'+data+'"]').addClass(add);
-    } else {
-      jQuery('[data-panel="'+data+'"]').removeClass(add);
-     jQuery('[data-panel="'+data+'"]').addClass(remove);
-    }
-}
-        </script>
+  <script>
+      function contactOpen(data,remove,add){
+        if( jQuery('[data-panel="'+data+'"]').hasClass(remove) ){
+        jQuery('[data-panel="'+data+'"]').removeClass(remove);
+        jQuery('[data-panel="'+data+'"]').addClass(add);
+          } else {
+            jQuery('[data-panel="'+data+'"]').removeClass(add);
+           jQuery('[data-panel="'+data+'"]').addClass(remove);
+          }
+      }
+      
+      var buttonSkills = {
+        buttonExpand : function(){
+          jQuery(".button-skills .button-item a:first-child").on("click",function(event){
+              event.preventDefault();
+              jQuery(this).siblings(".content").css("display","block");
+              jQuery(this).siblings(".link").css("display","inline-block");
+              jQuery(this).parent().siblings().css("display","none");
+              jQuery(".button-skills").addClass("expanded");
+              jQuery(".button-skills .icon--ei-close").css("display","block");
+              jQuery(".button-skills #contact-form").css("display","block");
+              jQuery(".button-skills .buttons").addClass("col-lg-6");
+
+          });
+          console.log("loading buttonExpand");
+        },
+        closeSection : function(){
+          jQuery(".button-skills .icon--ei-close").on("click",function(){
+              jQuery(this).siblings("#contact-form").css("display","none");
+              jQuery(this).siblings(".buttons").removeClass("col-lg-6");
+              jQuery(".button-skills .buttons .button-item .content").css("display","none");
+              jQuery(".button-skills .buttons .button-item .link").css("display","none");
+              jQuery(".button-skills .buttons .button-item").css("display","inline-block");
+              jQuery(".button-skills").removeClass("expanded");
+              jQuery(this).css("display","none");
+              console.log("close");
+          });
+          console.log("loading closeSection");
+        }
+      };
+      jQuery(window).load(function(){
+        buttonSkills.buttonExpand();
+        buttonSkills.closeSection();
+      });
+  </script>
 
     <?php endwhile; ?>

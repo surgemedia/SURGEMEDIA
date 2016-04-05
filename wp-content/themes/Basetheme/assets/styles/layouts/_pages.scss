@@ -203,7 +203,7 @@ background-size:cover;
 #our_staff {
 	background-position:50% 100%;
 	position:relative;
-	&:before {
+		&:before {
 		content:"";
 		background-color:rgba(#fff,1);
 		opacity:0.8;
@@ -230,6 +230,9 @@ background-size:cover;
 		}
 	}
 }
+
+
+
 #about {
 	h2.alt {
     font-size: 4em;
@@ -241,6 +244,161 @@ background-size:cover;
 	    line-height: 2em;
 	}
 }
+
+#our_skills{
+	@extend #about;
+	min-height: 56em;
+	position:relative;
+	transition: .3s ease all;
+	.button-skills{
+		background-color:transparent;
+
+		.icon--ei-close{
+			position:absolute;
+			left: 0;
+	    cursor: pointer;
+	    z-index: 3;
+	    display:none;
+			color:#fff;
+		}
+		.buttons{
+			margin: auto;
+			position: relative;
+    	width: 72em;
+			.button-item{
+				display: inline-block;
+				margin: 1em;
+		    min-width: 21em;
+				a:first-child{
+					background-color:$blue;
+					color:#fff;
+					padding: 1em 3em;
+					display: block;
+					font-size: 1.6em;
+					text-transform: uppercase;
+				}
+				.content{
+					display: none;
+				}
+				.link{
+					display:none;
+				  color: #fff;
+			    font-size: 2.5em;
+			    text-transform: uppercase;
+			   	i{
+			   		font-size: 1.5em;
+    				vertical-align: middle;	
+    			}
+			    div{
+			    	text-align: center;
+			    	margin:1em 0;
+			    	width:100%;
+			    }
+			  }
+			}
+		}
+		#contact-form{
+			display:none;
+			font-size:1.8em;
+			padding: 4em 4em 0 4em;
+
+			.gform_heading { display:none !important;	}
+			.gfield_label { display:none !important; }
+			p{
+				display: block;
+				color:#fff;
+			}
+			input,textarea {
+				padding:0.5em;
+				border:2px solid $grey;
+				margin-bottom:0.5em;
+			}
+			textarea{
+				height:9em;
+			}	
+			.gform_body{
+				ul{
+					li{
+						width:49.4%;
+						float:left;
+						clear:none;
+						&.gfield_error{
+					    margin-top: -0.4em;
+    				}
+					}
+					li:last-child{
+						width:100%;
+					}
+				}
+			}
+			.gform_footer {
+				display:block;
+				margin: 0 1em;
+				input[type="submit"]{
+					// width: 4em;
+					height: 3em;
+					padding:0em 3em;
+					background: $yellow;
+					border:0;
+					color:$teal-dark;
+					float:right;
+					font-family:$primary-font;
+					text-transform:uppercase;
+					font-weight: bold;
+
+				}
+			}
+		}
+		&.expanded{
+			background-color:$blue;
+			transition: .3s ease all;
+			z-index: 1002;
+    	min-height: 56em;
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+			.buttons{
+				top:0em;
+				padding-top:4em;
+				height:100%;
+				.button-item{
+					
+					a:first-child{
+						@extend .h2;
+						font-family: "Klavika Basic",Helvetica,Arial,sans-serif;
+				    font-weight: 400;
+				    margin-bottom: .7em;
+						background-color:transparent;
+						padding:0;
+						color:#fff;
+						text-transform:uppercase;
+						text-decoration: none;
+						cursor: default;
+						padding: 0 .8em;
+						text-align: left;
+					}
+					.content{
+					  margin-bottom: 1em;
+					}
+					ul,
+					p{
+						@extend .p5;
+						font-weight: 200;
+					  font-size: 1.6em;
+					  line-height: 2em;
+					  padding: 0 3em;
+					  color:#fff;
+    				text-align: left;
+					}
+					ul{
+						padding-left:4em;
+					}
+				}
+			}
+		}
+	}
+}
+
 /*==================================
 =            Contact Us            =
 ==================================*/
