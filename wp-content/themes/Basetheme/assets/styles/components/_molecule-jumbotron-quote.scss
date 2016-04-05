@@ -17,19 +17,15 @@
 		    z-index:99;
 
 		    .surge-icon-quotation_mark_start {
-		    	    position: absolute;
-				    top: -0.5em;
-				    left: -1.5em;
+		    	    display:none;
 		    }
 		    .surge-icon-quotation_mark_end {
-		    	    position: absolute;
-    				bottom: -0.8em;
-    				right: -0.5em;
+		    	    display:none;
 		    }
 
 	}
 	&.size-s {
-		height:470px;
+		height:350px;
 		.quote {
 			margin-top: 3.5em;
 			font-size: 3.5em;
