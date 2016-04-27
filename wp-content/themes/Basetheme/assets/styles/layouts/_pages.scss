@@ -250,6 +250,14 @@ background-size:cover;
 	min-height: 56em;
 	position:relative;
 	transition: .3s ease all;
+	background-size: cover;
+  background-position: center;
+  .text-puff{
+  	h2,p{
+  		color:#fff;
+
+  	}
+  }
 	.button-skills{
 		background-color:transparent;
 
@@ -270,12 +278,14 @@ background-size:cover;
 				margin: 1em;
 		    min-width: 21em;
 				a:first-child{
-					background-color:$blue;
+					background-color:rgba(0,0,0,0.5);
+					border: 2px solid #fff;
 					color:#fff;
 					padding: 1em 1em;
 					display: block;
 					font-size: 1.6em;
 					text-transform: uppercase;
+
 				}
 				.content{
 					display: none;
@@ -357,6 +367,7 @@ background-size:cover;
     	position: absolute;
     	left: 0;
     	top: 0;
+    	width:100%;
 			.buttons{
 				top:0em;
 				padding-top:4em;
@@ -376,6 +387,7 @@ background-size:cover;
 						cursor: default;
 						padding: 0 .8em;
 						text-align: left;
+						border:0;
 					}
 					.content{
 					  margin-bottom: 1em;
