@@ -51,7 +51,8 @@ endif;
         </div>
     </section>
 
-    <section id="our_skills">
+    <?php $skill_bg = get_field('our_skill_background'); ?>
+    <section id="our_skills" style="background-image:url('<?php echo $skill_bg ?>');">
       <div class="">
         <div class="container text-center" >
           <div class="text-puff">
