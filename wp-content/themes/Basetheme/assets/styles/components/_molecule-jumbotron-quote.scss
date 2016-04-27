@@ -30,5 +30,28 @@
 			margin-top: 3.5em;
 			font-size: 3.5em;
 		}
+	}
+	&.blog {
+		h1{
+			position:relative;
+			z-index: 10;
+			width:70%;
+			margin: 1em auto 0.1em auto;
+			display:block;
+			color:#fff;
+			@extend .h3;
+			font-size:6em;
+		}
+		a {
+			position:relative;
+			z-index: 10;
+			padding:1em 2em;
+			@extend .button-extender;
+			display:inline-block;
+			margin:0 auto;
+		}
+	}
+	&.size-xs {
+		height:150px;
 	}	
 }

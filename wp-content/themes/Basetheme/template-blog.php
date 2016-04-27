@@ -4,7 +4,10 @@
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-<?php includePart('templates/molecule-small-jumbotron.php',getFeaturedUrl(),get_the_content(),'size-s',true); ?>
+<?php 
+$featuredPost = get_field('featured_blog')[0];
+$featuredPostLink = get_permalink($featuredPost);
+includePart('templates/molecule-blog-jumbotron.php',getFeaturedUrl($featuredPost),get_post($featuredPost)->post_title,'size-s blog',$featuredPostLink); ?>
 
 <section id="work" class="container-fluid">
 
@@ -13,6 +16,7 @@
         <?php
         $args = array (
             'post_type'  =>  array( 'post' ),
+             'post__not_in' => array($featuredPost),
         );
         // The Query
         $query = new WP_Query( $args );

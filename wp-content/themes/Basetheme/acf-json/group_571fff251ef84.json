@@ -1,0 +1,53 @@
+{
+    "key": "group_571fff251ef84",
+    "title": "Featured - Blog",
+    "fields": [
+        {
+            "key": "field_571fff2cd1a2b",
+            "label": "Featured Blog",
+            "name": "featured_blog",
+            "type": "relationship",
+            "instructions": "Select the featured post",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": [
+
+            ],
+            "filters": [
+                "search"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": 1,
+            "max": 1,
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-blog.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1461716178
+}

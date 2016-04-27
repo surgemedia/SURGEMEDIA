@@ -5,7 +5,7 @@
 ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php
-$exlude = array();
+$exlude = array(); 
 ?>
 <?php
 $client = wp_get_post_terms(get_field('selected_work')[0], 'clients', array("fields" => "all"))[0];
