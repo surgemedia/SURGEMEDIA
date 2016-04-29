@@ -79,6 +79,7 @@
                     endif;
                 ?>
     </div>
+    <?php includePart('templates/atom-chatrify.php') ?>
   </div>
   </div>
   
