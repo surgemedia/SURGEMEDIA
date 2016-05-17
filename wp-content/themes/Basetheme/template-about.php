@@ -12,15 +12,11 @@
     <div class="pattern-bg"></div>
         <div class="container">
             <div class="quote text-center"><?php the_content(); ?>
-			
-			<i class="surge-icon-quotation_mark_start"></i>
-			<i class="surge-icon-quotation_mark_end"></i>
+    			<i class="surge-icon-quotation_mark_start"></i>
+    			<i class="surge-icon-quotation_mark_end"></i>
             </div>
-
         </div>
     </section>
-
-
     <section id="about" class="container-fluid teal-dark-bg text-white">
         <div class="row">
 
@@ -186,6 +182,9 @@ endif;
 	?>
     	</section>
   <script>
+
+
+
       function contactOpen(data,remove,add){
         if( jQuery('[data-panel="'+data+'"]').hasClass(remove) ){
         jQuery('[data-panel="'+data+'"]').removeClass(remove);

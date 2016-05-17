@@ -6,8 +6,9 @@
 <?php while (have_posts()) : the_post(); ?>
 <?php 
 $featuredPost = get_field('featured_blog')[0];
+$featuredPost_img = get_field('featured_banner',get_field('featured_blog')[0]);
 $featuredPostLink = get_permalink($featuredPost);
-includePart('templates/molecule-blog-jumbotron.php',getFeaturedUrl($featuredPost),get_post($featuredPost)->post_title,'size-s blog',$featuredPostLink); ?>
+includePart('templates/molecule-blog-jumbotron.php',$featuredPost_img,get_post($featuredPost)->post_title,'size-s blog',$featuredPostLink); ?>
 
 <section id="work" class="container-fluid">
 

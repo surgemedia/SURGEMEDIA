@@ -5,4 +5,7 @@ body {
   p {
   	@extend .p6;
   }
+  li {
+  	@extend .p6;
+  }
 }

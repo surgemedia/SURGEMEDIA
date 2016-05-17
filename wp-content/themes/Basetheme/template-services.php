@@ -28,7 +28,7 @@ $paragraph = get_field('services_paragraph');
             </li>
             <li >
                 <a class="<?php if($_GET['service'] =='Development'){ echo 'active';} ?> " href="?service=Development">
-                    Development
+                    Web
                 </a>            
             </li>
             <li >

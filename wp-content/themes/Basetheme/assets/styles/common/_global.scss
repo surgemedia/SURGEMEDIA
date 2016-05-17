@@ -109,4 +109,12 @@ h2,.h2 { font-size:6em;   }
 	p {
 		@extend .p6;
 	}
+	li {
+		@extend .p6;
+    	margin-bottom: 1em;
+    	font-family:$secondary-font;
+	}
+	h2 {
+		padding: 0.3em 0em;
+	}
 }
