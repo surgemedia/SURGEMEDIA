@@ -136,7 +136,7 @@ endif;
 		 $image = getFeaturedUrl(); 
 		 $image_url = aq_resize($image,840,540,true,true,true);
 				?>
-    	<article class="row <?php the_field('color') ?>" >
+    	<article id="<?php echo str_replace(" ",'',get_the_title()) ?>" class="row <?php the_field('color') ?>" >
        <div class="img hidden-md hidden-lg ">
              <img class="img-responsive" src="<?php echo $image_url; ?>" />
           </div>
