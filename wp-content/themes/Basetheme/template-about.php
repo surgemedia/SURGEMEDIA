@@ -53,7 +53,7 @@ endif;
 
     <?php $skill_bg = get_field('our_skill_background'); ?>
     <section id="our_skills" style="background-image:url('<?php echo $skill_bg ?>');">
-      <div class="">
+      <div class="pattern-bg">
         <div class="container text-center" >
           <div class="text-puff">
             <h2 class="alt">Our Skills</h2>
@@ -108,14 +108,14 @@ endif;
     <?php $staff_bg = get_field('our_staff_background'); ?>
 
     <section id="our_staff" style="background-image:url('<?php echo $staff_bg ?>');">
-    <div class="pattern-bg">
-
+    <div class="">
     <div class="container text-center" >
     <div class="text-puff">
-	    <h2 class="alt">Our Staff</h2>
-	    <p><?php the_field('our_staff'); ?></p>
+      <h2 class="alt">Our Staff</h2>
+      <p><?php the_field('our_staff'); ?></p>
        </div>
        </div>
+
        </div>
     </section>
     <section id="staff-objs" class="container-fluid">
@@ -140,7 +140,7 @@ endif;
 		 $image = getFeaturedUrl(); 
 		 $image_url = aq_resize($image,840,540,true,true,true);
 				?>
-    	<article class="row <?php the_field('color') ?>" >
+    	<article id="<?php echo str_replace(" ",'',get_the_title()) ?>"  class="row <?php the_field('color') ?>" >
        <div class="img hidden-md hidden-lg ">
              <img class="img-responsive" src="<?php echo $image_url; ?>" />
           </div>
