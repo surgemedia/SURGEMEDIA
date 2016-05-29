@@ -117,4 +117,13 @@ h2,.h2 { font-size:6em;   }
 	h2 {
 		padding: 0.3em 0em;
 	}
+	figure {
+		border:0px;
+		display:inline-block !important;
+		.wp-caption-text {
+			padding: 9px 0;
+		    color: #999;
+		    font-size: 1.2em;
+		}
+	}
 }
