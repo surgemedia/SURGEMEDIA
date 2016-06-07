@@ -107,6 +107,11 @@ wp_reset_postdata();
   
 </div>
 <?php endwhile; ?>
+<div class="controls-posts">
+      <div class="glyphicon glyphicon-th"><a href="<?php echo site_url(); ?>" ></a></div>
+      <?php next_post_link("<div class='glyphicon glyphicon-chevron-left'>%link</div>","");?>
+      <?php previous_post_link("<div class='glyphicon glyphicon-chevron-right'>%link</div>","");?>
+    </div>
 <!-- Modal -->
 <div class="modal fade" id="caseStudyModal" tabindex="-1" role="dialog" aria-labelledby="caseStudyModal">
   <div class="modal-dialog" role="document">
