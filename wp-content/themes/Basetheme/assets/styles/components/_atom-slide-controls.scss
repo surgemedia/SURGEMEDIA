@@ -21,7 +21,10 @@
 
 .controls-posts{
 	@extend .controls;
-	width:4em;
+	top: unset;
+	bottom:3vh;
+	width:100%;
+	text-align:center;
 	position: fixed;
 	div {
 		text-align: center;
