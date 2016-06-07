@@ -15,12 +15,14 @@
   <article <?php post_class('container basic'); ?>>
     <div class="entry-content mt-1">
     	<h2 class="text-center alt"><strong><?php the_title(); ?></strong></h2>
-    	
+
       <?php the_content(); ?>
     </div>
-    <footer>
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </footer>
+    <div class="controls-posts">
+      <div class="glyphicon glyphicon-th"><a href="<?php echo site_url(); ?>/blog" ></a></div>
+      <?php previous_post_link("<div class='glyphicon glyphicon-chevron-left'>%link</div>","");?>
+      <?php next_post_link("<div class='glyphicon glyphicon-chevron-right'>%link</div>","");?>
+    </div>
     <?php  comments_template(); ?>
   </article>
 <?php endwhile; ?>
