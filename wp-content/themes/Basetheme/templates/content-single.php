@@ -20,8 +20,8 @@
     </div>
     <div class="controls-posts">
       <div class="glyphicon glyphicon-th"><a href="<?php echo site_url(); ?>/blog" ></a></div>
-      <?php previous_post_link("<div class='glyphicon glyphicon-chevron-left'>%link</div>","");?>
-      <?php next_post_link("<div class='glyphicon glyphicon-chevron-right'>%link</div>","");?>
+      <?php next_post_link("<div class='glyphicon glyphicon-chevron-left'>%link</div>","");?>
+      <?php previous_post_link("<div class='glyphicon glyphicon-chevron-right'>%link</div>","");?>
     </div>
     <?php  comments_template(); ?>
   </article>
