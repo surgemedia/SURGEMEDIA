@@ -5,6 +5,10 @@
 ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php 
+$spacer_title = get_field('spacer_title');
+$spacer_text = get_field('spacer_text');
+$spacer_image = get_field('spacer_image');
+
 $paragraph = get_field('services_paragraph');
  $image_url = getFeaturedUrl();
  ?>
@@ -121,6 +125,28 @@ $paragraph = get_field('services_paragraph');
                 );
             // TODO: Add back to top button is work-obj isn't / 3
             } 
+        }
+        if (sizeof($work_objs) % 15 != 0) {
+           includePart('templates/work-spacer.php',
+                    'col-md-8',
+                     $spacer_title,
+                     $spacer_text,
+                     $spacer_image
+            );
+        } elseif (sizeof($work_objs) % 4 == 0) {
+           includePart('templates/work-spacer.php',
+                    'col-md-8',
+                     $spacer_title,
+                     $spacer_text,
+                     $spacer_image
+            );
+        } elseif (sizeof($work_objs) % 3 != 0) {
+           includePart('templates/work-spacer.php',
+                    'col-md-4',
+                     $spacer_title,
+                     $spacer_text,
+                     $spacer_image                   
+            );
         }
         ?>
 
