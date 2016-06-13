@@ -104,6 +104,7 @@ $paragraph = get_field('services_paragraph');
          } } else { array_push($work_objs,''); }
         // Restore original Post Data
         wp_reset_postdata();
+        $obj_num=0;
         for ($i=0; $i < sizeof($work_objs); $i++) { 
             $post_id = $work_objs[$i]->ID;
 
@@ -124,13 +125,14 @@ $paragraph = get_field('services_paragraph');
                 "all"))[0]->name
                 );
             // TODO: Add back to top button is work-obj isn't / 3
+                $obj_num++;
             } 
         }
-        
-        if (sizeof($work_objs) % 3 > 0) {
+   
+        if ( $obj_num % 3 > 0) {
             
            includePart('templates/work-spacer.php',
-                    'col-md-'.(sizeof($work_objs) % 3)*4 ,
+                    'col-md-'.(8/($obj_num % 3)),
                      $spacer_title,
                      $spacer_text,
                      $spacer_image
