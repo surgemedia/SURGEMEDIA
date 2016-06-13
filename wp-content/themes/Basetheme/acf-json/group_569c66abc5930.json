@@ -81,6 +81,30 @@
             "media_upload": 1
         },
         {
+            "key": "field_571ff1fd9f884",
+            "label": "Our Skill Background",
+            "name": "our_skill_background",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_56fb57b7298d2",
             "label": "Our Skills Button",
             "name": "our_skills_button",
@@ -184,9 +208,9 @@
                     "disabled": 0
                 },
                 {
-                    "key": "field_56fc75dcc913b",
-                    "label": "Url",
-                    "name": "Url",
+                    "key": "field_57020f55eefab",
+                    "label": "Link Url",
+                    "name": "link_url",
                     "type": "url",
                     "instructions": "",
                     "required": 0,
@@ -247,9 +271,7 @@
                     "choices": {
                         "document": "Document"
                     },
-                    "default_value": [
-
-                    ],
+                    "default_value": [],
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 0,
@@ -355,9 +377,7 @@
             "post_type": [
                 "staff"
             ],
-            "taxonomy": [
-
-            ],
+            "taxonomy": [],
             "filters": [
                 "search"
             ],
@@ -384,5 +404,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1459732194
+    "modified": 1461711453
 }

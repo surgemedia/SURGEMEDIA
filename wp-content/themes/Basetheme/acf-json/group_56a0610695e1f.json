@@ -3,11 +3,11 @@
     "title": "Page - Services",
     "fields": [
         {
-            "key": "field_56ce4bb2e704c",
+            "key": "field_56ce4a85b128d",
             "label": "Page Title",
             "name": "title",
             "type": "text",
-            "instructions": "in the quotes at the top",
+            "instructions": "this appears in the quotes",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -112,20 +112,20 @@
                     "readonly": 0
                 },
                 {
-                    "key": "field_56cd2edc8d58b",
+                    "key": "field_575e19c4ab287",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
                     "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
+                    "required": "",
+                    "conditional_logic": "",
                     "wrapper": {
                         "width": "",
                         "class": "",
                         "id": ""
                     },
                     "return_format": "url",
-                    "preview_size": "full",
+                    "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -148,12 +148,12 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1456360395
+    "modified": 1465784813
 }
