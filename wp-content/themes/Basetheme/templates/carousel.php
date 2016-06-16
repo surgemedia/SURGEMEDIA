@@ -6,8 +6,8 @@ $videoid = explode('?',$videoid)[0];
 
 $carousel = get_field('carousel');
 ?>
-<section id="jumbotron" class="big-background">
-  <div id="video-bg" class="hidden-xs hidden-sm" data-video-id='<?php echo $videoid ?>'></div>
+<section id="jumbotron" class="big-background" >
+  <div id="video-bg" class="hidden-xs hidden-sm" style="background-image:url(<?php the_field('video_background_thumb') ?>); background-size:cover;" data-video-id='<?php echo $videoid ?>'></div>
   <div class="pattern-bg">
 <div class="container">
 <div id="carousel-id" class="carousel slide row" data-ride="carousel">

@@ -139,36 +139,6 @@ $paragraph = get_field('services_paragraph');
             );
         } 
         ?>
-
-
-
-
-
-
-
-
-<?php 
-
-// if(has_post_thumbnail( get_the_id())){
-//                 includePart('templates/work-obj.php',
-//                 getFeaturedUrl( get_the_id() ),
-//                 hex2rgba( get_field('overlay_color') , 0.8),
-//                 wp_get_post_terms(get_the_id(), 'services', array("fields" =>
-//                 "all"))[0]->name,
-//                 '',
-//                 $work_home[$j],
-//                 wp_get_post_terms(get_the_id(), 'clients', array("fields" =>
-//                 "all"))[0]->name
-//                 );
-//             } 
-
-            ?>
-
-
-
-
-
-
     </div>
 </section>
 <?php endwhile; ?>

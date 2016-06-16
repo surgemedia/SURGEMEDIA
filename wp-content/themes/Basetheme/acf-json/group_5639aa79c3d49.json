@@ -40,6 +40,30 @@
             "height": ""
         },
         {
+            "key": "field_576221a620030",
+            "label": "Video Background Thumbnail",
+            "name": "video_background_thumb",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5639aacb3cbb4",
             "label": "carousel",
             "name": "carousel",
@@ -356,5 +380,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1456367722
+    "modified": 1466048960
 }
