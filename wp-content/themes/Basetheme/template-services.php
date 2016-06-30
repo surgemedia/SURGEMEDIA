@@ -124,7 +124,6 @@ $paragraph = get_field('services_paragraph');
                 wp_get_post_terms($work_objs[$i]->ID, 'clients', array("fields" =>
                 "all"))[0]->name
                 );
-            // TODO: Add back to top button is work-obj isn't / 3
                 $obj_num++;
             } 
         }

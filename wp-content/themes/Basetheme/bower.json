@@ -11,14 +11,18 @@
     "bootstrap-sass-official": "3.3.5",
     "youtubeBackground": "youtube-background-video#^1.0.4",
     "smooth-scroll": "^1.0.1",
-    "shufflejs": "^3.1.1"
+    "shufflejs": "^3.1.1",
+    "list.js": "listjs#^1.2.0"
   },
   "overrides": {
     "youtubeBackground": {
       "main": "./src/jquery.youtubebackground.js"
-      },
+    },
     "modernizr": {
       "main": "./modernizr.js"
+    },
+    "list.js": {
+      "main": "./dist/list.js"
     },
     "bootstrap-sass-official": {
       "main": [
@@ -43,5 +47,4 @@
       ]
     }
   }
-
 }

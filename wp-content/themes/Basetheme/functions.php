@@ -36,6 +36,7 @@ $sage_includes = [
   'post_types/action-post-type-work.php',               // Custom Post Type
   'post_types/action-post-type-people.php',               // Custom Post Type
   'post_types/register-taxonomies.php',               // Custom Post Type
+  'lib/function-get_component.php'
 
 
 ];
