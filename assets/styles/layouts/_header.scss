@@ -1,3 +1,4 @@
+#adsNavtag,
 #navtag {
 	background:$yellow;
 	position:fixed;
@@ -276,4 +277,7 @@ header.banner {
 	    width: 100%;
 	    height: 1px;
 	}
+}
+#adsNavtag.hover_effect {
+	width:143px;
 }
