@@ -6,3 +6,23 @@ div#gform_confirmation_message_1 {
     color: $yellow;
     line-height: 1.7;
 }
+
+.gform_footer{
+					display:inline-block;
+			    float: right;
+			    padding-top: 1.45em;
+			    clear: none;
+			    padding: 0px;
+			    margin: 4px 0px 0px 0px;
+			input[type="submit"]{
+				width: 100%;
+				height: 3.3em;
+				background: $yellow;
+				border:0;
+				color:$teal-dark;
+				font-weight: 400;
+				text-transform: uppercase;
+				font-family:"Klavika Basic";
+				font-size: 1.5em;
+			}
+		}
