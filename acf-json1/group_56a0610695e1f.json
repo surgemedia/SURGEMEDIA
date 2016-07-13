@@ -102,7 +102,9 @@
                         "Development": "Development",
                         "Video": "Video"
                     },
-                    "default_value": [],
+                    "default_value": [
+
+                    ],
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 0,
@@ -110,32 +112,89 @@
                     "placeholder": "",
                     "disabled": 0,
                     "readonly": 0
-                },
-                {
-                    "key": "field_575e19c4ab287",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": "",
-                    "conditional_logic": "",
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
                 }
             ]
+        },
+        {
+            "key": "field_577f1f91aa9b4",
+            "label": "Web Order",
+            "name": "development_order",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "work"
+            ],
+            "taxonomy": [
+
+            ],
+            "filters": "",
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        },
+        {
+            "key": "field_577ee81c5eb5e",
+            "label": "VIdeo Order",
+            "name": "video_order",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "work"
+            ],
+            "taxonomy": [
+                "services:video"
+            ],
+            "filters": "",
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        },
+        {
+            "key": "field_577ee8465eb60",
+            "label": "Design Order",
+            "name": "design_order",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "work"
+            ],
+            "taxonomy": [
+                "services:design"
+            ],
+            "filters": "",
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "id"
         }
     ],
     "location": [
@@ -155,5 +214,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1465784813
+    "modified": 1467949016
 }

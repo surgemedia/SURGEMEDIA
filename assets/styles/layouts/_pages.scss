@@ -81,7 +81,7 @@ background-size:cover;
 #main-content {
 	border:4px solid #fff;
 	font-family:$secondary-font;
-	min-height:50vh;
+	overflow:hidden;
 	background: $teal-dark;
 	color:#fff;
 	padding-top:3em;

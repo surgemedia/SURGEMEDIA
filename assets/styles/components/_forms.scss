@@ -6,17 +6,23 @@ div#gform_confirmation_message_1 {
     color: $yellow;
     line-height: 1.7;
 }
-
+.entry-content {
+	.gfield_required {display:none;}
 .gform_footer{
 					display:inline-block;
+					width:100%;
 			    float: right;
-			    padding-top: 1.45em;
 			    clear: none;
-			    padding: 0px;
-			    margin: 4px 0px 0px 0px;
+			    font-size:1.5em;
+			    margin-top: 0em;
+					margin-right: 1em;
+					padding:0px 0 2em 0;
+
 			input[type="submit"]{
-				width: 100%;
+				width: auto;
+				padding:1em;
 				height: 3.3em;
+				float:right;
 				background: $yellow;
 				border:0;
 				color:$teal-dark;
@@ -25,4 +31,6 @@ div#gform_confirmation_message_1 {
 				font-family:"Klavika Basic";
 				font-size: 1.5em;
 			}
+
 		}
+}

@@ -1,7 +1,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <?php
 /**
-* Template Name: Contact Template
+* Template Name: Thank Template
 */
 ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -12,7 +12,7 @@
          // $size = $args[3];
          // $quote = $arg[4];
           ?>
-<section id="jumbotron" class="big-background <?php echo $size; ?> contact" style="background-image:url('<?php echo $image ?>');">
+<section id="jumbotron" class="big-background <?php echo $size; ?> contact">
     <div class="pattern-bg"></div>
         <div id="contactus" class="container">
          <h1 class="text-center"><?php the_title(); ?></h1>
@@ -23,6 +23,9 @@
            <div id="gform_confirmation_message_1" class="gform_confirmation_message_1 gform_confirmation_message">Thanks for contacting us! We will get in touch with you shortly.</div>
         </div>
          </div>
+          <video id="video-bg" autoplay loop muted preload="auto">
+    <source src="wp-content/themes/Basetheme/home-vid.mp4" type="video/mp4">
+  </video>
     </section>
 
 <section id="contact-info">

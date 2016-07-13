@@ -79,27 +79,45 @@ $paragraph = get_field('services_paragraph');
 	        );
 	        
 	    } else {
-		  $args = array (
-	        'post_type'  =>  array( 'work' ),
-            'posts_per_page' => -1,
-            'orderby' => 'rand',
-	        'tax_query' => array(
-	                                array(
-	                                'taxonomy' => 'services',
-	                                'field' => 'slug',
-	                                'terms' => $_GET["service"]),
-	                                )
-	                         
-	        );
-	    }
+            $tempVars = [
+                'sort_type' => strtolower($_GET["service"]).'_order',
+            ];
+            $args;
+            if(sizeof(get_field($tempVars['sort_type']) > 0)){
+        		$args = array (
+        	        'post_type'  =>  array( 'work' ),
+                    'post__in' => get_field($tempVars['sort_type']),
+                    'orderby' => 'post__in',
+        	        'tax_query' => array(
+        	                                array(
+        	                                'taxonomy' => 'services',
+        	                                'field' => 'slug',
+        	                                'terms' => $_GET["service"]),
+        	                                )
+        	                         
+        	        );
+          } else {
+                $args = array (
+                    'post_type'  =>  array( 'work' ),
+                    'posts_per_page' => -1, 
+                    'orderby' => 'rand', 
+                    'tax_query' => array(
+                                            array(
+                                            'taxonomy' => 'services',
+                                            'field' => 'slug',
+                                            'terms' => $_GET["service"]),
+                                            )
+                                     
+                    );
+
+        	    }
+        };
         // The Query
         $query = new WP_Query( $args );
         $clientCount = 0;
         // The Loop
         if ( $query->have_posts() ) { while ( $query->have_posts() ) { $query->the_post();
-
                 array_push($work_objs,get_post());
-
 
          } } else { array_push($work_objs,''); }
         // Restore original Post Data
